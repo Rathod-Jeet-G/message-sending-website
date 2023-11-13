@@ -1,0 +1,26 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="../static/view.css"></link>
+    </head>
+    <body>
+       <form>
+          <nav>
+            <a href="home" style="color: white; text-decoration:none;" class="h">Home</a>
+            <a href="incoming_view" style="color: white; text-decoration:none;" class="h">View</a>
+            <a href="sent-view" style="color: white; text-decoration:none;" class="h">Sent</a>
+            
+            <button><a href="logout" style="color: cyan; text-decoration:none;">Logout</a></button>
+         </nav>   
+     </form>
+     <ul>
+        <li>Sent:</li>
+        {% for row in data %}
+
+            <br><li>To: {{ row[1] }}</li>
+            <li>Message: {{ row[2] }}</li>
+            <hr>
+        {% endfor %}
+    </ul>
+</body>
+</html>

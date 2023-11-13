@@ -1,0 +1,32 @@
+body{
+    
+
+    background: url(bg2.jpg);
+}
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+
+
+.div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 90px;
+    box-shadow:7px 7px 60px black;
+    text-align: justify;
+    color: white;
+    
+    margin-bottom: 9px;
+  
+}
+h2{
+    margin-bottom: 13px;
+}
+
